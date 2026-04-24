@@ -31,7 +31,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/bfhl", {
+      const res = await fetch("/bfhl", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data }),
